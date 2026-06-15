@@ -6,7 +6,6 @@ import os
 
 # --- CONFIGURAÇÃO DE SEGURANÇA (API KEY) ---
 # O código agora busca a chave de forma segura no sistema operacional.
-# Para rodar no seu PC, você configurará a variável de ambiente ou coloca a string ali apenas localmente.
 GENAI_API_KEY = os.environ.get("GEMINI_API_KEY", "SUA_API_KEY_AQUI")
 genai.configure(api_key=GENAI_API_KEY)
 
